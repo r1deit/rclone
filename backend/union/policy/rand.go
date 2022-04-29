@@ -50,7 +50,7 @@ func (p *Rand) Create(ctx context.Context, upstreams []*upstream.Fs, path string
 	if err != nil {
 		return nil, err
 	}
-	return []*upstream.Fs{p.rand(upstreams)}, nil
+	return []*upstream.Fs{p.rand(upstreams)}, nil // Bookie TODO
 }
 
 // CreateEntries is CREATE category policy but receiving a set of candidate entries
